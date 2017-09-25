@@ -1,0 +1,156 @@
+﻿/*诊断样式*/
+.x-cis-diag-trigger{
+    font-size: 16px;
+    font-family: FontAwesome;
+}
+.x-cis-diag-trigger:before{
+    content: "\f0f1";
+}
+/*医生编码*/
+.x-cis-doctor-trigger{
+    font-size: 16px;
+    font-family: FontAwesome;
+}
+.x-cis-doctor-trigger:before{
+    content: '\f0f0';
+}
+.main-top-span .main-top-version {
+        margin-top: 10px;
+        font-size: 10px;
+        width:27px;height:17px;
+        background:url("../media/image/versionsImg.png") no-repeat;
+        text-align:center;
+        line-height:17px;
+}
+.x_custom_statistics_item {
+    width: 390px;
+    height: 160px;
+    float: right;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.x_custom_statistics_item .x_content {
+        width: 100%;
+        margin-top: 24px;
+        font-size: 14px;
+        float: left;
+        margin-left: 13px;
+    }
+ .x_custom_statistics_item .x_content div {
+            float: left;
+            text-align: right;
+            width: 120px;
+        }
+.x_custom_statistics_item .x_content .x_span {
+            float: left;
+            text-align: right;
+            width: 110px;
+  }
+.x_custom_menu_item .x_custom_menu_item_image {
+    font-size:70px;
+    height: 70px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/*Drgs编码*/
+.x-cis-drgs-trigger {
+    font-size: 16px;
+    font-family: FontAwesome;
+}
+
+.x-cis-drgs-trigger:before {
+        content: '\f1a5';
+}
+/*首页样式*/
+.x_custom_statistics_item.audit {
+        width: 490px;
+    }
+
+    .x_custom_statistics_item.back_1 {
+        background-color: #385d82;
+    }
+
+    .x_custom_statistics_item.back_2 {
+        background-color: #9879ab;
+    }
+
+    .x_custom_statistics_item.back_3 {
+        background-color: #86aac3;
+    }
+
+    .x_custom_statistics_item .x_title {
+        width: 100%;
+        margin-top: 43px;
+        float: left;
+        font-size: 16px;
+        font-weight: 200;
+        margin-left: 35px;
+    }
+        .x_custom_statistics_item .x_content span {
+            color: #ef7752;
+            font-weight: bold;
+            padding-left: 6px;
+        }
+
+.x_custom_menu_item {
+    display: inline-block;
+    width: 195px;
+    height: 135px;
+    margin: 0 0 5px 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #9879ab;
+    color: #fff;
+}
+
+.x_custom_menu_item_close:hover {
+    color: #e8e8e8;
+}
+
+.x_custom_menu_item.x-view-item-focused {
+    outline: 0px dashed #153b63 !important;
+    outline-offset: 0px;
+}
+
+.x_custom_menu_item .x_custom_menu_item_close {
+    font-size: 14px;
+    margin: 3px;
+    float: right;
+    cursor: pointer;
+}
+.x_custom_menu_item .x_custom_menu_item_title {
+    font-size: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.x_custom_menu_item.item_1 {
+    background-color: #85a9c3;
+}
+
+.x_custom_menu_item.item_2 {
+    background-color: #03abab;
+}
+
+.x_custom_menu_item.item_3 {
+    background-color: #bfa982;
+}
+
+.x_custom_menu_item.item_4 {
+    background-color: #9fd334;
+}
+
+.x_custom_menu_item.item_5 {
+    background-color: #987aab;
+}
+
+.x_custom_menu_item.item_6 {
+    background-color: #e9b63f;
+}
+.x-treelist-nav {
+    background-color: #1c4978;
+    z-index: 1;
+    font-family: 'Microsoft YaHei';
+}

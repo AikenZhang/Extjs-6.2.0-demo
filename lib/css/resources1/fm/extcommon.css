@@ -1,0 +1,435 @@
+﻿/** {
+    font-family: '微软雅黑 Regular', 微软雅黑,helvetica,arial,verdana,sans-serif;
+    font-weight: initial;
+}*/
+/*去除IE中文本框中带有X的问题*/
+::-ms-clear, ::-ms-reveal {
+    display: none;
+}
+/*清除grid终checkbox获得焦点边框*/
+.x-grid-row-checker:focus {
+    outline: none;
+}
+/*验证失败背景框颜色*/
+.x-form-trigger-wrap-default.x-form-trigger-wrap-invalid * {
+    background-color: #fef4f4;
+}
+
+.x-grid-cell-inner a {
+    color: #2b7bd6;
+    text-decoration: none;
+}
+
+.x-color-defult {
+    color: #000;
+}
+
+.x-color-blue {
+    color: blue;
+}
+
+.x-color-lightblue {
+    color: #009ACD;
+}
+
+.x-color-green {
+    color: green;
+}
+
+.x-color-red {
+    color: red;
+}
+
+.x-color-darkred {
+    color: #CD2626;
+}
+
+.x-color-white {
+    color: #fff;
+}
+
+.x-panel-split-bottom {
+    border-bottom: 1px solid #cecece;
+}
+
+.x-panel-split-bottom_top {
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+}
+
+.x-panel-split-all {
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+}
+
+.x-panel-ghost {
+    z-index: 1;
+}
+
+.x-border-layout-ct {
+    background: #DFE8F6;
+}
+
+.x-portal-body {
+    padding: 0 0 0 8px;
+}
+
+.x-portal .x-panel-dd-spacer {
+    border: 2px dashed #99bbe8;
+    background: #f6f6f6;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.x-portlet {
+    margin-bottom: 10px;
+    padding: 1px;
+}
+
+    .x-portlet .x-panel-body {
+        background: #fff;
+    }
+
+.portlet-content {
+    padding: 10px;
+    font-size: 11px;
+}
+
+.x-accordion-item .x-accordion-hd {
+    border-top-color: #f3f7fb;
+}
+
+.x-toolbar .x-mask-msg {
+    padding: 0;
+}
+
+.x-toolbar .x-mask-msg-text {
+    padding: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.x-reset-mask {
+    background-color: transparent;
+}
+
+
+.x-treelist-nav .x-treelist-item-expandable li .x-treelist-item-text {
+    margin-left: 10px;
+}
+
+.x-text-break {
+    word-break: break-all; /*支持IE，chrome，FF不支持*/
+    word-wrap: break-word; /*支持IE，chrome，FF*/
+}
+
+.x-text-nowrap {
+    white-space: nowrap;
+}
+
+.x-mask-msg-text {
+    padding: 0;
+    background-image: none;
+}
+
+.x-grid-subtable-con {
+    overflow: auto;
+    background-color: #fff;
+}
+
+.x-grid-subtable {
+    border-top: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+}
+
+    .x-grid-subtable th {
+        border-bottom: 1px solid #e9e9e9;
+        border-right: 1px solid #e9e9e9;
+    }
+
+    .x-grid-subtable td {
+        border-bottom: 1px solid #e9e9e9;
+        border-right: 1px solid #e9e9e9;
+        padding: 3px 5px;
+    }
+
+/*Search Form btn*/
+.cis-searchform-expand-btn {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*#region 主框架 */
+.main-top-span {
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f5f5f5;
+    display: inline-block;
+    font-family: 'Microsoft YaHei';
+    clear: both;
+}
+
+    .main-top-span .main-top-logo, .main-top-span .main-top-title, .main-top-span .main-top-version {
+        float: left;
+    }
+
+    .main-top-span .main-top-logo {
+        width: 34px;
+        height: 34px;
+        margin: 7px 3px 7px 10px;
+    }
+
+    .main-top-span .main-top-title {
+        padding: 0 5px;
+    }
+
+    .main-top-span .main-top-version {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #ec733e;
+        padding: 0 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+/*#region 框架 cisapp-main-top*/
+.cisapp-main-top .x-btn-wrap-default-small.x-btn-arrow-right:after {
+    content: "\f107";
+    font-size: 16px;
+}
+
+.cisapp-main-top .x-btn-inner-default-small {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+    .cisapp-main-top .x-btn-inner-default-small .fa {
+        font-size: 15px;
+    }
+
+.main-left-panel .x-treelist-item,.x-treelist-item-expandable {
+    font-family: 'Microsoft YaHei';
+}
+    .main-left-panel .x-treelist-nav.x-treelist-micro {
+        font-family: 'Microsoft YaHei';
+        z-index: 100;
+    }
+/*#endregion */
+.x_fa_user {
+    margin-right: 5px;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.fa-angle-right, .fa-angle-left {
+    font-size: 24px;
+}
+
+.x_single_container_theme {
+    width: 24px;
+    height: 24px;
+    margin: 0 4px 0 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.x_single_listitem {
+    cursor: pointer;
+}
+
+    .x_single_listitem:hover {
+        background-color: #EAEAEA;
+    }
+
+    .x_single_listitem .fa {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+/*#endregion */
+
+/*#region  ui配置*/
+.x-panel-split-config table {
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+}
+
+    .x-panel-split-config table table {
+        border: none;
+    }
+
+.x-panel-split-config td {
+    border-right: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+
+    .x-panel-split-config td td {
+        border: none;
+    }
+
+.x-panel-split-config .x_seachform_item {
+    cursor: move;
+}
+
+.x-panel-split-config .x-form-item-default.x-item-disabled {
+    -ms-filter: initial;
+    opacity: initial;
+}
+
+/*ui配置 树节点cursor设置*/
+.tree-itemcls {
+}
+
+    .tree-itemcls .x-grid-cell {
+        cursor: pointer !important;
+    }
+/*#endregion*/
+
+/*#region ueditor */
+.webuploader-container {
+    position: relative;
+}
+
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /*IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+
+.webuploader-pick-hover {
+    /*background: #00a2d4;*/
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+/*#endregion */
+
+/*#region 分页条 */
+.page {
+    padding: 3px 5px;
+    color: #555;
+}
+
+    .page a {
+        display: inline-block;
+        padding: 0 5px;
+        margin: 0 2px;
+        text-align: center;
+        color: #0e9c94;
+        font-size: 14px;
+    }
+
+    .page span {
+        display: inline-block;
+        padding: 0 5px;
+        margin: 0 2px;
+        text-align: center;
+        font-size: 14px;
+    }
+/*#endregion */
+
+.x-cis-window-trigger-default {
+    width: 18px;
+    font-size: 14px;
+}
+
+    .x-cis-window-trigger-default:before {
+        content: '\f022';
+    }
+
+.x-fm-tree-root {
+    color: #368ecc;
+}
+
+    .x-fm-tree-root .x-grid-item-focused {
+        color: #368ecc;
+    }
+
+/*#链接样式 */
+.x-link {
+    color:#2b7bd6;
+    cursor:pointer;
+}
+
+.fa-cogs-icon {
+    display: inline-block;
+    width: 44px;
+    text-align: center;
+    border-radius: 22px;
+    height: 44px;
+    background-color: #fff;
+    color: #000;
+    line-height: 50px;
+}
+
+/*#region charts */
+.cis-legend-container {
+    max-width: 0;
+    margin: 0 auto;
+    clear: both;
+}
+
+    .cis-legend-container .cis-legend-item {
+        float: left;
+        display: block;
+        width: 150px;
+        /*line-height: 30px;*/
+        padding: .8em 1em .8em 1.8em;
+        color: #333;
+        background: rgba(255, 255, 255, 0);
+        max-width: 16em;
+        min-width: 0;
+        font-size: 12px;
+        font-family: tahoma, arial, verdana, sans-serif;
+        line-height: 12px;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+    }
+
+        .cis-legend-container .cis-legend-item span {
+        }
+
+
+.cis-legend-inactive {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+}
+
+.cis-legend-item-marker {
+    position: absolute;
+    width: .8em;
+    height: .8em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    border-radius: 0.4em;
+    /*-webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.4) 0 1px 0 inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.4) 0 1px 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.4) 0 1px 0 inset;*/
+    left: .7em;
+    top: .85em;
+}
+
+.x-tree-rolefunc {
+    color: #0b0;
+}

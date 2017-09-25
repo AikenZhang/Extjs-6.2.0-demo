@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extjs6.2.0Demo</title>
+     <!--系统配置-->
+<script type="text/javascript">
+    var AppConfig={
+        //项目根目录，物理路径
+        appUrl:"./",
+        //view页面路径
+        appName:"webapp",
+        //项目版本
+        appVersion:"1.0.0",
+        //项目默认打开页
+        defaultMenuId:"592",
+        Design:{
+            Menu:{
+                Pressed:false,
+                MaxWidth:200,
+                MinWidth:40
+            }
+        }
+    };
+    var application=true;
+    var Fm={
+            Server:{
+                Menus:[{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:592,
+                        MenuType:"3",
+                        MenuView:"webapp.view.ll.ll",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页",
+                        children:[{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:589,
+                        MenuType:"3",
+                        MenuView:"webapp.view.ll.ll",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页"
+                    },{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:588,
+                        MenuType:"3",
+                        MenuView:"webapp.view.ll.ll",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页"
+                    }]
+                    },{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:593,
+                        MenuType:"3",
+                        MenuView:"webapp.view.index.index",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页"
+                    }]
+            }
+        }
+    var ServerData={
+        MenuList:[{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:592,
+                        MenuType:"3",
+                        MenuView:"webapp.view.ll.ll",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:false,
+                        text:"首页",
+                        children:[
+                            {
+                                Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:591,
+                        MenuType:"3",
+                        MenuView:"webapp.view.ll.ll",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页",
+                            }
+                        ]
+                    },{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:593,
+                        MenuType:"3",
+                        MenuView:"webapp.view.index.index",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页"
+                    },{
+                        Handler:"openNewTab",
+                        Icon:"fa fa-home",
+                        Id:593,
+                        MenuType:"3",
+                        MenuView:"webapp.view.index.index",
+                        Name:"首页",
+                        OperationType:"2",
+                        ParentId:0,
+                        Remark:"勿删",
+                        Sort:10,
+                        State:"1",
+                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
+                        ValidateCode:null,
+                        ViewParams:null,
+                        iconCls:"fa fa-home",
+                        leaf:true,
+                        text:"首页"
+                    }],
+        UserName:"Stauts404"
+                }
+</script>
+	<link rel="stylesheet" type="text/css" href="lib/css/resources/theme-triton-all.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/resources/charts-all-rtl.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/fontAwesome/css/font-awesome.css">
+	<script type="text/javascript" src="lib/build/ext-all-debug.js"></script>
+	<script type="text/javascript" src="lib/locale-zh_CN.js"></script>
+	<script src="lib/build/theme-triton.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript" src="webapp/app.js"></script>
+</body>
+</html>
