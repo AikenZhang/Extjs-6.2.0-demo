@@ -17,7 +17,7 @@ Ext.define('Fm.base.MainController', {
         var me = this;
 
         Ext.History.init();
-        Ext.History.on('change', function (code) {
+        Ext.History.on('change', function (code,view) {
             var mid = code;
             if (!mid) {
                 mid = 0;
@@ -61,6 +61,22 @@ Ext.define('Fm.base.MainController', {
             treelist.getItem(record).updateSelected(true);
             me.lastSelectedRecord = record;
         }
+    },
+    getMenuName:function(code,Id){
+        var me=this;
+        for(var a=0;a<code.length;a++){
+            var children=code[a].children;
+            if(children){
+               return me.getMenuName(children,Id);
+            }
+            else{
+                if(code[a].Id===Id){
+                    return code[a];
+                }
+                
+            }
+        }
+        
     },
     /**
      * 标签切换
@@ -142,15 +158,15 @@ Ext.define('Fm.base.MainController', {
             main.setActiveTab(Ext.getCmp('main_tab_0'));
             return false;
         }
+        menuData=me.getMenuName(ServerData.MenuList,menuId);
+        // menuData = Ext.Array.findBy(ServerData.MenuList, function (item) {
+        //     return item.Id.toString() === menuId.toString();
+        // });
 
-        menuData = Ext.Array.findBy(Fm.Server.Menus, function (item) {
-            return item.Id.toString() === menuId.toString();
-        });
-
-        if (!menuData) {
-            //Fm.msg.error('没有权限查看此页面。');
-            return false;
-        }
+        // if (!menuData) {
+        //     //Fm.msg.error('没有权限查看此页面。');
+        //     return false;
+        // }
 
         if (menuData.ParentId !== 0) {
             record = store.getAt(store.findBy(function (record) {
@@ -164,31 +180,25 @@ Ext.define('Fm.base.MainController', {
 
         me.selectMenuById(menuId);
 
-        var id = 'main_tab_' + menuData['Id'];
-
+        var id = 'main_tab_' + menuData.Id;
         var panel = Ext.getCmp(id);
         try {
             if (!panel) {
-                //application.globalMask.show();
                 setTimeout(function () {
                     try {
-                        panel = Ext.create(menuData['MenuView'], {
+                        panel = Ext.create(menuData.MenuView, {
                             id: id,
                             menuId: menuId,
                             closable: true,
-                            //glyph: menuData['glyph'],
-                            iconCls: menuData['iconCls'],
+                            iconCls: menuData.iconCls,
                             closeAction: 'destroy',
                             autoDestroy: true,
-                            title: menuData['Name'],
+                            title: menuData.text,
                             cls: 'cis-panel-default',
                             frame: false,
                             border: false,
-                            maskParam: (menuData['ViewParams'] || {}).maskParam,
-                            viewParams: menuData['ViewParams'],
                             listeners: {
                                 afterrender: function (v) {
-                                    //application.globalMask.hide();
                                     if (data && panel[data.event]) {
                                         panel[data.event].call(panel, data.params)
                                     }

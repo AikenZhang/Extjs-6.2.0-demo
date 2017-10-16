@@ -6,6 +6,25 @@ Ext.Loader.setPath({
     'Ext.draw.ContainerBase':AppConfig.appUrl+'lib/build/charts.js'
 });
 Ext.setGlyphFontFamily('FontAwesome');
+//遮罩
+var LoadMask={
+    show:function(view){
+        var me=this;
+        var viewId=view.getId();
+        me[viewId]=new Ext.LoadMask({
+            style: {
+                backgroundColor: 'rgba(255, 255, 255, 0.5);'
+            },
+            border: false,
+            target: view
+        });
+        me[viewId].show();
+    },
+    hide:function(view){
+        var viewId=view.getId();
+        //this[viewId].hide();
+    }
+};
 Ext.application({
     name: AppConfig.appName,
     appFolder: AppConfig.appUrl + AppConfig.appName,

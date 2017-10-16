@@ -12,170 +12,43 @@
         //项目版本
         appVersion:"1.0.0",
         //项目默认打开页
-        defaultMenuId:"592",
+        defaultMenuId:"100",
         Design:{
             Menu:{
                 Pressed:false,
+                //左边路由部分的宽度
                 MaxWidth:200,
                 MinWidth:40
             }
         }
     };
     var application=true;
-    var Fm={
-            Server:{
-                Menus:[{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:592,
-                        MenuType:"3",
-                        MenuView:"webapp.view.ll.ll",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页",
-                        children:[{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:589,
-                        MenuType:"3",
-                        MenuView:"webapp.view.ll.ll",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页"
-                    },{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:588,
-                        MenuType:"3",
-                        MenuView:"webapp.view.ll.ll",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页"
-                    }]
-                    },{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:593,
-                        MenuType:"3",
-                        MenuView:"webapp.view.index.index",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页"
-                    }]
-            }
-        }
     var ServerData={
         MenuList:[{
                         Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:592,
-                        MenuType:"3",
-                        MenuView:"webapp.view.ll.ll",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
                         iconCls:"fa fa-home",
-                        leaf:false,
+                        Id:'100',
+                        ParentId:'0',
+                        MenuView:"webapp.view.ll.ll",
                         text:"首页",
+                        leaf:true
+                    },{
+                        Handler:"openNewTab",
+                        iconCls:"fa fa-briefcase",
+                        Id:'200',
+                        ParentId:'0',
+                        text:"组件",
                         children:[
                             {
                                 Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:591,
-                        MenuType:"3",
-                        MenuView:"webapp.view.ll.ll",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页",
+                                ParentId:'200',
+                                iconCls:"",
+                                Id:'201',
+                                MenuView:"webapp.view.ueditor.Ueditor",
+                                text:"富文本组件",
+                                leaf:true
                             }
                         ]
-                    },{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:593,
-                        MenuType:"3",
-                        MenuView:"webapp.view.index.index",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页"
-                    },{
-                        Handler:"openNewTab",
-                        Icon:"fa fa-home",
-                        Id:593,
-                        MenuType:"3",
-                        MenuView:"webapp.view.index.index",
-                        Name:"首页",
-                        OperationType:"2",
-                        ParentId:0,
-                        Remark:"勿删",
-                        Sort:10,
-                        State:"1",
-                        SysAppKey:"38FD765F22990DDAE0531D82750A85EB",
-                        ValidateCode:null,
-                        ViewParams:null,
-                        iconCls:"fa fa-home",
-                        leaf:true,
-                        text:"首页"
                     }],
         UserName:"Stauts404"
                 }
@@ -189,5 +62,7 @@
 </head>
 <body>
 <script type="text/javascript" src="webapp/app.js"></script>
+<script type="text/javascript" src="lib/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="lib/ueditor/ueditor.all.js"></script>
 </body>
 </html>

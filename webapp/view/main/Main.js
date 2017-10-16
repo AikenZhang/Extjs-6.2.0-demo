@@ -102,8 +102,9 @@ Ext.define('webapp.view.main.Left', {
             }),
             singleExpand: true,
             expanderOnly: false,
-            selected: true,
-            selectedParent: true,
+            selected: false,
+            selectOnExpander:true,
+            //selectedParent: false,
             listeners: {
                 itemclick: "leftMenuItemClick"
             }
