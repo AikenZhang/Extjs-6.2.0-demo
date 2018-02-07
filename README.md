@@ -1,5 +1,7 @@
 ## Extjs 6.2.0 Demo
+
 Extjs 6.2.0  框架搭建，不使用打包工具
+
 ###BuildStep
 ######加载依赖
 npm install
