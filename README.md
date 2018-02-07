@@ -25,7 +25,8 @@ node server.js
 3.将chart（图表）有关的文件放入框架，因为extjs 的chart（图表）是单独的文件，所以自己项目需要的话，得单独引用。（从extjs sdk 中  build/packages/charts/classic  取出所需文件 放入框架中的build  和  css中）
 ![](http://images2017.cnblogs.com/blog/1225603/201709/1225603-20170929144829809-2133891215.png)
 
-4.将extjs 扩招组件/插件  引入框架（因为不是常用，可以按需引用，减少文件体积。所以说框架中引入原始文件而不是build后的，将  sdk packages/ux/classic/src 放入框架ux中）
+4.将extjs 扩招组件/插件  引入框架（因为不是常用，可以按需引用，减少文件体积。所以说框架中引入原始文件而不是build后的，将 sdk packages/ux/classic/src 放入框架ux中）
+
 ![](http://images2017.cnblogs.com/blog/1225603/201709/1225603-20170929144831747-856237698.png)
 
 5.创建项目起始页index.html  放入框架根目录。以triton主题为例 依次引入theme-triton-all.css  ，ext-all.js  图表有关文件按自己的需求是否引用 
